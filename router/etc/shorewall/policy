@@ -1,0 +1,12 @@
+#SOURCE DEST            POLICY          LOGLEVEL        RATE    CONNLIMIT
+loc     net             ACCEPT
+loc     $FW             ACCEPT
+#loc     dmz             ACCEPT
+$FW     loc             ACCEPT
+#$FW     dmz             ACCEPT
+$FW     net             ACCEPT
+#dmz     net             ACCEPT
+doc     all             ACCEPT
+net     all             DROP            #$LOG_LEVEL
+# THE FOLOWING POLICY MUST BE LAST
+all     all             REJECT          #$LOG_LEVEL

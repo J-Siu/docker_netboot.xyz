@@ -1,0 +1,21 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s5:
+      optional: true
+    enp0s6:
+      optional: true
+  bridges:
+    net:
+      dhcp4: true
+      dhcp6: true
+      dhcp-identifier: mac
+      link-local: [ ]
+      interfaces:
+        - enp0s5
+    lan:
+      addresses:
+        - 10.20.40.1/24
+      interfaces:
+        - enp0s6
+  version: 2

@@ -1,0 +1,7 @@
+?FORMAT 2
+#ZONE   INTERFACE       OPTIONS
+net     NET_IF          dhcp,tcpflags,nosmurfs,routefilter,logmartians,sourceroute=0,physical=net
+loc     LOC_IF          dhcp,tcpflags,nosmurfs,routefilter,logmartians,physical=lan
+#dmz     DMZ_IF          dhcp,tcpflags,nosmurfs,routefilter,logmartians,sourceroute=0,physical=dmz
+doc			docker0					physical=docker+,routeback=1
+doc			br							physical=br-+,routeback=1

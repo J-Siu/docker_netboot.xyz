@@ -1,0 +1,2 @@
+#ACTION                 SOURCE                  DEST            PROTO   PORT    IPSEC   MARK    USER    SWITCH  ORIGDEST        PROBABILITY
+MASQUERADE              10.20.40.0/24           net

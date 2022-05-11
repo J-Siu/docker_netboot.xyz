@@ -1,0 +1,1 @@
+# netboot.xyz configuration files
